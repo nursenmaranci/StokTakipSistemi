@@ -20,7 +20,7 @@ namespace StokTakipSistemi
 
         private void TedarikciListele()
         {
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "SELECT * FROM Tedarikciler"; 
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -40,7 +40,7 @@ namespace StokTakipSistemi
                 string TedarikciAdres = txtTedarikciAdres.Text;
                 string TedarikciNumara = txtTedarikciNumara.Text;
 
-                string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+                string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
                 string query = "INSERT INTO Tedarikciler (TedarikciAdi, TedarikciAdres, TedarikciNumara) VALUES (@TedarikciAdi, @TedarikciAdres, @TedarikciNumara)";
 
                 using (SqlConnection con = new SqlConnection(connectionString))

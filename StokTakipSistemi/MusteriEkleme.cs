@@ -20,7 +20,7 @@ namespace StokTakipSistemi
 
         private void MusteriListele()
         {
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "SELECT * FROM Musteriler"; 
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -44,7 +44,7 @@ namespace StokTakipSistemi
                 string MusteriVergi = txtMusteriVergi.Text;
 
 
-                string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+                string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
                 string query = "INSERT INTO Musteriler (MusteriAdi, MusteriAdresi, MusteriNumara, FirmaAdi, VergiNo) VALUES (@MusteriAdi, @MusteriAdresi, @MusteriNumara, @FirmaAdi, @VergiNo)";
 
                 using (SqlConnection con = new SqlConnection(connectionString))

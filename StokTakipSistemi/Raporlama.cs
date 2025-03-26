@@ -29,7 +29,7 @@ namespace StokTakipSistemi
 
         private void UrunleriYukle()
         {
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "SELECT UrunID, UrunAdi FROM Urunler";
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -49,7 +49,7 @@ namespace StokTakipSistemi
         {
             try
             {
-                string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+                string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
                 string query = "SELECT HareketTuru, UrunID, TedarikciID, MusteriID, Tarih, Miktar, BirimFiyati, Aciklama FROM StokHareketleri WHERE 1=1";
 
                 if (!string.IsNullOrEmpty(cmbHareketTuru.Text))

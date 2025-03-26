@@ -24,7 +24,7 @@ namespace StokTakipSistemi
         }
         private void TedarikcileriDoldur()
         {
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "SELECT TedarikciID, TedarikciAdi FROM Tedarikciler";
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -40,7 +40,7 @@ namespace StokTakipSistemi
         }
         private void UrunleriListele()
         {
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "SELECT * FROM Urunler"; 
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -73,7 +73,7 @@ namespace StokTakipSistemi
                     return;
                 }
 
-                string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+                string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
                 string query = "INSERT INTO Urunler (UrunKodu, UrunAdi, Aciklama, BirimFiyati, KDVOrani, TedarikciID, KritikSeviye) VALUES (@UrunKodu, @UrunAdi, @Aciklama," +
                     " @BirimFiyati, @KDVOrani, @TedarikciID, @KritikSeviye)";
 

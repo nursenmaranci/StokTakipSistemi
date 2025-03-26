@@ -20,7 +20,7 @@ namespace StokTakipSistemi
 
         private void TedarikcileriDoldur()
         {
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "SELECT TedarikciID, TedarikciAdi FROM Tedarikciler"; 
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -37,7 +37,7 @@ namespace StokTakipSistemi
 
         private void UrunDoldur()
         {
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "SELECT UrunID, UrunAdi FROM Urunler"; 
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -53,7 +53,7 @@ namespace StokTakipSistemi
         }
         private void MusterileriDoldur()
         {
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "SELECT MusteriID, MusteriAdi FROM Musteriler"; 
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -71,7 +71,7 @@ namespace StokTakipSistemi
 
         private void StokHareketleriListele()
         {
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "SELECT * FROM StokHareketleri"; 
 
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -140,7 +140,7 @@ namespace StokTakipSistemi
             string birimFiyati = txtBirimFiyat.Enabled ? txtBirimFiyat.Text : null;
             string aciklama = txtAciklama.Text;
 
-            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=1475;Encrypt=true;TrustServerCertificate=true;";
+            string connectionString = "Server=NURSEN;Database=StokTakip;User Id=sa;Password=****;Encrypt=true;TrustServerCertificate=true;";
             string query = "INSERT INTO StokHareketleri (HareketTuru, UrunID, TedarikciID, MusteriID, Tarih, Miktar, BirimFiyati, Aciklama) " +
                            "VALUES (@HareketTuru, @UrunID, @TedarikciID, @MusteriID, @Tarih, @Miktar, @BirimFiyati, @Aciklama)";
 
